@@ -13,10 +13,59 @@ function Navbar() {
           <img src={bell} alt="" />
           <span className="counter">1</span>
         </div>
-        <span className="sort">sort</span>
-        <div className="drop-down">
-          <span>Today</span>
-          <img src={back} alt="" />
+        {/* <div className="nav-items">
+          <span>filter</span>
+          <div className="drop-down">
+            <span>Inprogress</span>
+            <img src={back} alt="" />
+          </div>
+          <div className="drop-opt">
+            
+          </div>
+        </div>
+        <div className="nav-items">
+          <span>sort</span>
+          <div className="drop-down">
+            <span>Creation Date</span>
+            <img src={back} alt="" />
+          </div>
+          <div className="drop-opt">
+                     </div>
+        </div> */}
+        <div className="nav-items">
+          <span>filter</span>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Inprogress
+              <img src={back} alt="" />
+            </button>
+            <div class="dropdown-content">
+              <span>Closed</span>
+              <span>Inproges</span>
+              <span>Open</span>
+            </div>
+          </div>
+        </div>
+        <div className="nav-items">
+          <span>filter</span>
+
+          <div class="dropdown">
+            <button class="dropbtn">
+              Dropdown
+              <img src={back} alt="" />
+            </button>
+            <div class="dropdown-content">
+              <span>Creation Date</span>
+              <span>Last Update</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <button className="dropbtn">
+            Today
+            <img src={back} alt="" />
+          </button>
         </div>
       </div>
     </div>
