@@ -1,0 +1,170 @@
+.b-container {
+    /* Rectangle 446 */
+
+    /* position: absolute; */
+    /* width: 1546px; */
+    height: 100%;
+    /* left: 347px; */
+    /* top: 265px; */
+
+    background: #FFFFFF;
+    box-shadow: -3px -5px 53.7px rgba(0, 0, 0, 0.11);
+    border-radius: 46px 46px 0px 0px;
+    padding: 20px;
+
+}
+
+.b-items {
+    background: #FFFFFF;
+
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Rectangle 281 */
+
+    box-sizing: border-box;
+
+    /* position: absolute; */
+    /* width: 1488px; */
+    height: 94px;
+    /* left: 376px; */
+    /* top: 294px; */
+
+    /* #A6A9AC */
+    border: 1px solid rgba(166, 169, 172, 0.7);
+    border-radius: 24px;
+
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+
+    /* Component 42 */
+
+    /* position: absolute; */
+    /* left: 87.03%; */
+    /* right: 3.82%; */
+    /* top: 28.8%; */
+    /* bottom: 65.65%; */
+
+
+
+    /* Rectangle 1 */
+
+    /* position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%; */
+
+    /* #3583F6 */
+    background: #3583F6;
+    border-radius: 20px;
+    border: none;
+
+    /* Hire Now */
+
+    /* position: absolute;
+    left: 35.1%;
+    right: 34.72%;
+    top: 23.33%;
+    bottom: 31.67%; */
+
+    /* Text */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    /* line-height: 27px; */
+    /* identical to box height, or 135% */
+    text-align: center;
+    padding: 10px 40px;
+    color: #FFFFFF;
+
+
+}
+
+.comp-req {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.undo-btn {
+
+    padding: 10px 40px;
+    /* Component 42 */
+
+    box-sizing: border-box;
+
+    /* position: absolute;
+left: 82.97%;
+right: 7.89%;
+top: 28.8%;
+bottom: 65.65%; */
+
+    border: 1px solid #000000;
+    border-radius: 52px;
+
+
+    /* Rectangle 1 */
+
+    /* position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%; */
+
+    border-radius: 51px;
+
+
+    /* Hire Now */
+
+    /* position: absolute; */
+    /* visibility: hidden; */
+    /* left: 34.53%;
+right: 34.72%;
+top: 23.33%;
+bottom: 31.67%; */
+
+    /* Text */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    /* line-height: 27px; */
+    /* identical to box height, or 135% */
+    text-align: center;
+
+    /* #3D3D3D */
+    color: #6E6E6E;
+
+
+}
+
+.check-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #3583F6;
+    /* object-fit: cover; */
+    display: flex;
+    align-items: center;
+}
+
+.check-img>img {
+    margin-top: auto;
+    margin-bottom: auto;
+    /* object-fit: cover; */
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}

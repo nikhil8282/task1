@@ -1,0 +1,49 @@
+.h-container {
+
+    width: 100%;
+
+
+    padding: 20px 40px;
+
+    background: #ffffff;
+    /* background: rebeccapurple; */
+    box-shadow: 0px 4px 12.5px rgba(0, 0, 0, 0.14);
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h-item {
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+.h-item>span {
+    font-family: Poppins;
+    font-size: 18x;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.h-item>img {
+    /* Frame 1527 */
+    width: 25px;
+    object-fit: cover;
+
+    /* height: 20px; */
+
+    /* Auto layout */
+}
+
+.select {
+    color: #3583F6;
+}
