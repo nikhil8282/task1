@@ -1,0 +1,12 @@
+.blue-btn {
+    background: #3583F6;
+    color: #FFFFFF;
+
+    border: none;
+}
+
+.white-btn {
+    border: 1px solid #6E6E6E;
+    background: transparent;
+    color: black;
+}

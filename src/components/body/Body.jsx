@@ -3,10 +3,8 @@ import "./body.css";
 import check from "../../images/check.png";
 import View from "../projectDetails/View";
 function Body({ selected }) {
-  const [open, setOpen] = useState(true);
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const [open, setOpen] = useState(false);
+ 
   return (
     <div className="b-container">
       <div className="b-items">
@@ -24,7 +22,7 @@ function Body({ selected }) {
         </div>
         {selected === "Project" && (
           <div className="details">
-            <span onClick={() => setOpen(true)}>Project Details</span>
+            <span style={{color:"#3583F6",cursor:"pointer"}} onClick={() => setOpen(true)}>Project Details</span>
           </div>
         )}
         {selected === "Accepted" && <button className="btn">Done</button>}
@@ -37,7 +35,7 @@ function Body({ selected }) {
           </div>
         )}
       </div>
-      <View open={open} handleClose={handleClose} />
+      <View open={open} setOpen={setOpen} />
     </div>
   );
 }

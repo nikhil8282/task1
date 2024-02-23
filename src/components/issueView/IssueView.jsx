@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./issueView.css";
+import HireModal from "../modals/hireModal/HireModal";
 function IssueView() {
+  const [hireModalOpen, setHireModalOpen] = useState(false);
+
   return (
     <div className="issue-view">
       <div className="issue-heading">
@@ -32,8 +35,11 @@ function IssueView() {
       <div className="comment-sec">
         <div>your comment</div>
         <textarea></textarea>
-        <button>update</button>
+        <div className="issue-update-btn">
+          <button onClick={() => setHireModalOpen(true)}>update</button>
+        </div>
       </div>
+      <HireModal open={hireModalOpen} setOpen={setHireModalOpen} />
     </div>
   );
 }

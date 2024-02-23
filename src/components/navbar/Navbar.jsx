@@ -2,11 +2,21 @@ import React from "react";
 import "./navbar.css";
 import bell from "../../images/bell.png";
 import back from "../../images/back.png";
-function Navbar() {
+function Navbar({ filter, setFilter, sort, setSort }) {
+
+  const handleChangeFilter = (val) => {
+    if (val === filter) return;
+    setFilter(val);
+  };
+  const handleChangeSort = (val) => {
+    if (val === sort) return;
+    setSort(val);
+  };
   return (
     <div className="navbar">
       <div className="left-nav">
-        <h5>Hiring</h5>
+        <h5>Feedback and Support</h5>
+        <h5>Hire</h5>
       </div>
       <div className="right-nav">
         <div className="bell-icon">
@@ -36,37 +46,37 @@ function Navbar() {
           <span>filter</span>
           <div class="dropdown">
             <button class="dropbtn">
-              Inprogress
+              {filter}
               <img src={back} alt="" />
             </button>
             <div class="dropdown-content">
-              <span>Closed</span>
-              <span>Inproges</span>
-              <span>Open</span>
+              <span onClick={()=>handleChangeFilter("Closed")}>Closed</span>
+              <span onClick={()=>handleChangeFilter("Inprogress")}>Inproges</span>
+              <span onClick={()=>handleChangeFilter("Open")}>Open</span>
             </div>
           </div>
         </div>
         <div className="nav-items">
-          <span>filter</span>
+          <span>sort</span>
 
           <div class="dropdown">
             <button class="dropbtn">
-              Dropdown
+              {sort}
               <img src={back} alt="" />
             </button>
             <div class="dropdown-content">
-              <span>Creation Date</span>
-              <span>Last Update</span>
+              <span onClick={()=>handleChangeSort("Creation Date")}>Creation Date</span>
+              <span onClick={()=>handleChangeSort("Last Update")}>Last Update</span>
             </div>
           </div>
         </div>
 
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <button className="dropbtn">
             Today
             <img src={back} alt="" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
