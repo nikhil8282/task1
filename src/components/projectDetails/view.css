@@ -2,7 +2,7 @@
 .view-section {
     /* View */
 
-    height: 745px;
+    height: 550px;
     /* background: firebrick; */
 
     /* Rectangle 286 */
@@ -10,6 +10,7 @@
     /* position: absolute; */
 
     background: #e4efff;
+
 }
 
 .view-section .btn-sec {
@@ -18,7 +19,7 @@
     position: absolute;
     /* left: 72.29%; */
     right: 1.73%;
-    top: 5.77%;
+    top: 3.77%;
     bottom: 86.17%;
     display: flex;
     align-items: center;
@@ -26,8 +27,8 @@
 }
 
 .view-section .btn-sec button {
-    width: 155.59px;
-    height: 45px;
+    width: 145.59px;
+    height: 40px;
     border-radius: 51px;
     font-family: Poppins;
     font-size: 20px;
@@ -39,8 +40,8 @@
 }
 
 .view-heading {
-    margin-top: 40px;
-    margin-left: 81px;
+    margin-top: 20px;
+    margin-left: 75px;
 
 
     font-size: 40px;
@@ -51,32 +52,33 @@
     padding: 10px;
 }
 
-.view-section .company-details {
+.company-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 110px;
-    margin-top: 32px;
+    height: 90px;
+    margin-top: 15px;
     border-top: 1px solid #A6A9ACB2;
     border-bottom: 1px solid #A6A9ACB2;
 
 }
 
 .view-section .company-details .dt {
-    padding-top: 9px;
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     height: 100%;
     /* align-items: center; */
     justify-content: center;
-    gap: 2px;
+    /* gap: 2px; */
     padding-left: 120px;
     flex: 3;
 
 }
 
+
 .company-details .dt:nth-child(1) {
-    padding-left: 81px;
+    padding-left: 75px;
 }
 
 .view-section .company-details .dt:nth-child(2) {
@@ -84,4 +86,18 @@
     border-right: 1px solid #A6A9ACB2;
     flex: 4;
 
+}
+
+/* project details */
+.project-details {
+    padding-left: 75px;
+    padding-top: 15px;
+}
+
+.p-dt {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 0px;
 }

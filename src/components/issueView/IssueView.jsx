@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "./issueView.css";
 import HireModal from "../modals/hireModal/HireModal";
-function IssueView() {
+import FeedbackNavbar from "../feedback_navbar/FeedbackNavbar";
+function IssueView({ filter,sort,setFilter,setSort }) {
   const [hireModalOpen, setHireModalOpen] = useState(false);
 
   return (
+    <>
+  <FeedbackNavbar filter={filter} sort={sort} setFilter={setFilter} setSort={setSort}/>
+    
     <div className="issue-view">
       <div className="issue-heading">
         <div className="item companyName">
@@ -41,6 +45,7 @@ function IssueView() {
       </div>
       <HireModal open={hireModalOpen} setOpen={setHireModalOpen} />
     </div>
+    </>
   );
 }
 

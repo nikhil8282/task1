@@ -10,3 +10,48 @@
     background: transparent;
     color: black;
 }
+
+.text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.sb {
+
+    font-size: 14px;
+    font-weight: 500;
+    /* line-height: 30px; */
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.medium-txt {
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #101010;
+
+}
+
+.blue-text {
+    color: #3583F6;
+
+}
+
+.green-text {
+    color: #27B357;
+
+}
+
+.red-text {
+    color: #FF4949;
+
+}

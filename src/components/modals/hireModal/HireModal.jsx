@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function HireModal({ open, setOpen }) {
   const [noPopup, setNoPopup] = useState(false);
   const [yesPopup, setYesPopup] = useState(false);
-
+  
   const handleClose = () => {
     setOpen(false);
   };

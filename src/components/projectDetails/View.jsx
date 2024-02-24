@@ -6,7 +6,7 @@ export default function View({ open, setOpen }) {
   return (
     <Dialog
       fullWidth={true}
-      maxWidth="xl"
+      maxWidth="md"
       open={open}
       onClose={() => setOpen(false)}
     >
@@ -14,7 +14,9 @@ export default function View({ open, setOpen }) {
         <div className="view-heading">Project Requirement</div>
         <div className="btn-sec">
           <button className="blue-btn">Accept</button>
-          <button className="white-btn" onClick={() => setOpen(false)}>Reject</button>
+          <button className="white-btn" onClick={() => setOpen(false)}>
+            Reject
+          </button>
         </div>
         {/* <hr /> */}
         {/* <div className="details-sec">
@@ -22,26 +24,28 @@ export default function View({ open, setOpen }) {
 
         <div className="company-details">
           <div className="dt">
-            <span>Company Name</span>
-            <span>Krinvi Technologies</span>
+            <span className="sb"> Company Name</span>
+            <span className="medium-txt">Krinvi Technologies</span>
           </div>
           <div className="dt">
-            <span>Email</span>
-            <span>info@krinvitech.com</span>
+            <span className="sb">Email</span>
+            <span className="medium-txt">info@krinvitech.com</span>
           </div>
           <div className="dt">
-            <span>Phone no</span>
-            <span>7895759572</span>
+            <span className="sb">Phone no</span>
+            <span className="medium-txt">7895759572</span>
           </div>
         </div>
         <div className="project-details">
-          <div className="project-name">
-            <span>Project</span>
-            <span>FashionHub: E-Commerce Revolution</span>
+          <div className="p-dt">
+            <span className="sb">Project</span>
+            <span className="medium-txt">
+              FashionHub: E-Commerce Revolution
+            </span>
           </div>
-          <div className="project-des">
-            <span>Project Description</span>
-            <span>
+          <div className="p-dt">
+            <span className="sb">Project Description</span>
+            <span className="medium-txt">
               At FashionHub, we're embarking on a groundbreaking e-commerce
               project that promises to redefine the online fashion experience.
               Our goal is to create a seamless platform that not only showcases
@@ -51,9 +55,9 @@ export default function View({ open, setOpen }) {
               fashion realm
             </span>
           </div>
-          <div className="project-budget">
-            <span>budget</span>
-            <span>$200</span>
+          <div className="p-dt">
+            <span className="medium-txt">budget</span>
+            <span className="sb">$200</span>
           </div>
         </div>
       </div>
