@@ -8,7 +8,7 @@ function Header({ selected, setSelected }) {
     if (v !== selected) setSelected(v);
   };
   return (
-    <div className="h-container">
+    <div className="hire-head-container">
       <div
         className={`h-item ${"Project" === selected ? "select" : ""}`}
         onClick={() => {

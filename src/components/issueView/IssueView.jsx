@@ -22,7 +22,7 @@ function IssueView({ filter,sort,setFilter,setSort }) {
 
         <div className="item status">
           <span>Status</span>
-          <span>$200</span>
+          <span>{filter}</span>
         </div>
       </div>
       <div className="issue-details">

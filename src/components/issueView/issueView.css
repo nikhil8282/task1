@@ -1,15 +1,16 @@
 .issue-view {
     /* Rectangle 446 */
     /* Component 32 */
+    margin: 20px 40px 0px 40px;
+    /* padding: 20px 20px 0px 20px; */
 
-    position: absolute;
-    margin: 27px 27px 0px 27px;
     /* height: 550px; */
 
     background: #FFFFFF;
     box-shadow: -3px -5px 53.7px rgba(0, 0, 0, 0.11);
     border-radius: 46px 46px 0px 0px;
 
+    height: 85.6vh;
 
 
 }
@@ -17,7 +18,7 @@
 .issue-heading {
     background: #FFFFFF;
     /* padding: 30px 40px; */
-    padding-top: 42px;
+    padding-top: 30px;
     padding-left: 40px;
     display: flex;
     /* gap: 5%; */
@@ -35,12 +36,14 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding-bottom: 20px;
 }
 
 
 
 .item span:nth-child(1) {
     color: #6E6E6E;
+    /* font-size: 16px; */
 
 }
 
@@ -48,18 +51,17 @@
     /* KrinviTech */
 
     /* width: 86px; */
-    height: 20px;
 
     /* sb */
+    /* height: 20px; */
     font-family: 'Poppins';
     font-weight: 600;
-
-    /* #101010 */
     color: #101010;
+    /* #101010 */
 }
 
 .issue-details {
-    padding: 20px 100px 20px 45px;
+    padding: 20px 80px 20px 45px;
     /* padding: 30px 40px; */
     border-top: 1px solid #A6A9ACB2;
     border-bottom: 1px solid #A6A9ACB2;
@@ -69,7 +71,7 @@
 .issue-details span {
     color: #6E6E6E;
     font-weight: 400;
-    line-height: 47px;
+    /* line-height: 47px; */
     letter-spacing: 0em;
     text-align: left;
 
@@ -104,8 +106,8 @@
     border-radius: 10px;
     margin-top: 10px;
     /* Rectangle 304 */
-    width: 100%;
-    height: 193px;
+    /* width: %; */
+    height: 140px;
     border: 1px solid #A6A9ACB2;
 }
 
@@ -121,11 +123,11 @@
     /* #3583F6 */
     background: #3583F6;
     border-radius: 72.0652px;
-    width: 180px;
-    height: 54.78px;
+    width: 150px;
+    height: 50.78px;
     border: none;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 45px;
     letter-spacing: -0.02em;
@@ -133,11 +135,12 @@
 
 
 }
-.comment-sec div{
+
+.comment-sec div {
     color: #6E6E6E;
     font-weight: 400;
     line-height: 47px;
     letter-spacing: 0em;
     text-align: left;
-   
+
 }

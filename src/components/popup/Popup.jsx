@@ -7,12 +7,12 @@ export default function HireModal({ open, setOpen }) {
 
   return (
     <>
-      <Dialog fullWidth="true" maxWidth="sm" open={open} onClose={handleClose}>
-        <div className="hire-modal-container">
-          <div className="hire-modal-text">
+      <Dialog maxWidth="sm" open={open} onClose={handleClose}>
+        <div className="popup-container">
+          <div className="popup-container-text">
             Are you sure the project requirement is completed?
           </div>
-          <div className="hire-modal-btn">
+          <div className="popup-container-btn">
             <button
               onClick={() => {
                 setOpen(false);

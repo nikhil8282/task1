@@ -15,11 +15,11 @@ function FeedbackNavbar({ filter, setFilter, sort, setSort }) {
     setSortDropOpen(false);
   };
   return (
-    <div className="admin-nav">
-      <div className="admin-left-nav">
+    <div className="feedback-nav">
+      <div className="feedback-left-nav">
         <h5>Feedback and Support</h5>
       </div>
-      <div className="admin-right-nav">
+      <div className="feedback-right-nav">
         <div className="bell-icon">
           <img src={bell} alt="" />
           <span className="counter">1</span>

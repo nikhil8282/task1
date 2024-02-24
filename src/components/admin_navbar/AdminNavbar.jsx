@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import "./adminNavbar.css";
+import "./hireNavbar.css";
 import bell from "../../images/bell.png";
 import back from "../../images/back.png";
-function AdminNavbar() {
+function HireNavbar() {
   return (
-    <div className="admin-nav">
-      <div className="admin-left-nav">
-        <h5>Hiring</h5>
+    <div className="hire-nav">
+      <div className="hire-left-nav">
+        <span className="hire-nav-title">Hiring</span>
       </div>
-      <div className="admin-right-nav">
+      <div className="hire-right-nav">
         <div className="bell-icon">
           <img src={bell} alt="" />
           <span className="counter">1</span>
         </div>
 
         <div className="r-nav-items">
-          <span className="sb ">sort</span>
+          <span>sort</span>
 
           <div className="dropdown">
             <button className="dropbtn">
@@ -29,4 +29,4 @@ function AdminNavbar() {
   );
 }
 
-export default AdminNavbar;
+export default HireNavbar;

@@ -4,19 +4,19 @@ import { useState } from "react";
 export default function HireModal({ open, setOpen }) {
   const [noPopup, setNoPopup] = useState(false);
   const [yesPopup, setYesPopup] = useState(false);
-  
+
   const handleClose = () => {
     setOpen(false);
   };
 
   return (
     <>
-      <Dialog fullWidth="true" maxWidth="sm" open={open} onClose={handleClose}>
-        <div className="hire-modal-container">
-          <div className="hire-modal-text">
+      <Dialog maxWidth="sm" open={open} onClose={handleClose}>
+        <div className="popup-container">
+          <div className="popup-container-text">
             Are you sure the ticket is resolved ?
           </div>
-          <div className="hire-modal-btn">
+          <div className="popup-container-btn">
             <button
               onClick={() => {
                 setYesPopup(true);
@@ -38,18 +38,17 @@ export default function HireModal({ open, setOpen }) {
       </Dialog>
       {noPopup && (
         <Dialog
-          fullWidth="true"
           maxWidth="sm"
           open={noPopup}
           onClose={() => {
             setNoPopup(false);
           }}
         >
-          <div className="hire-modal-container">
-            <div className="hire-modal-text">
+          <div className="popup-container">
+            <div className="popup-container-text">
               Do you want to mark this ticket as inprogress?
             </div>
-            <div className="hire-modal-btn">
+            <div className="popup-container-btn">
               <button>Yes</button>
               <button
                 onClick={() => {
@@ -64,18 +63,17 @@ export default function HireModal({ open, setOpen }) {
       )}
       {yesPopup && (
         <Dialog
-          fullWidth="true"
           maxWidth="sm"
           open={yesPopup}
           onClose={() => {
             setYesPopup(false);
           }}
         >
-          <div className="hire-modal-container">
-            <div className="hire-modal-text">
+          <div className="popup-container">
+            <div className="popup-container-text">
               Do you want to mark this ticket as closed?
             </div>
-            <div className="hire-modal-btn">
+            <div className="popup-container-btn">
               <button>Yes</button>
               <button
                 onClick={() => {

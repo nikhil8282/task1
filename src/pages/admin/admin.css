@@ -1,10 +1,11 @@
 .main {
     /* background: green; */
-    /* padding: 20px 40px; */
-    margin: 27px 25px 0px 25px;
+    padding: 20px 40px 0px 40px;
+
+    /* margin: 27px 25px 0px 25px; */
 
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 100vh;
+    /* height: 100vh; */
 }

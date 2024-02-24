@@ -1,4 +1,4 @@
-.hire-modal-container {
+.popup-container {
     /* hire */
 
 
@@ -7,43 +7,31 @@
 
     background: #FFFFFF;
     border-radius: 26px;
-    padding: 51px 0px 27px 82px;
-
-
-}
-
-.hire-modal-text {
-    /* Frame 1549 */
-
-    /* Auto layout */
+    padding: 30px 40px;
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 10px; */
-    /* width: 359px; */
-    /* height: 65px; */
-
-    /* font-size: 20px; */
-    font-weight: 500;
-    line-height: 45px;
-    letter-spacing: -0.02em;
-    text-align: left;
+    gap: 20px;
 
 }
 
-.hire-modal-btn {
-    margin-top: 37px;
+.popup-container-text {
+    text-align: center;
+}
+
+.popup-container-btn {
+    /* margin-top: 37px; */
     display: flex;
     gap: 25px;
 
 }
 
-.hire-modal-btn button {
+.popup-container-btn button {
     /* Rectangle 366 */
 
-    width: 200px;
-    height: 64px;
+    width: 150px;
+    height: 44px;
 
 
     /* #3583F6 */
@@ -52,8 +40,8 @@
     border: none;
 
     font-size: 20px;
-    font-weight: 600;
-    line-height: 27px;
+    font-weight: 400;
+    /* line-height: 27px; */
     letter-spacing: 0em;
     color: #FFFFFF;
 
@@ -61,7 +49,7 @@
 
 }
 
-.hire-modal-btn button:nth-child(2) {
+.popup-container-btn button:nth-child(2) {
     background: #FFFFFF;
     border: 1px solid #3583F6;
     color: black;

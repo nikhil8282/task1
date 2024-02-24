@@ -7,17 +7,17 @@ function Feedback({ filter,sort,setFilter,setSort }) {
     <>
   <FeedbackNavbar filter={filter} sort={sort} setFilter={setFilter} setSort={setSort}/>
     
-    <div className="main-sec">
-      <div className="list-items">
-        <div className="item companyName">
+    <div className="feedback-container">
+      <div className="f-container-items">
+        <div className="f-c-item">
           <span>Company Name</span>
           <span>Krinvi Technologies</span>
         </div>
-        <div className="item crzeatedOn">
+        <div className="f-c-item">
           <span>Created on</span>
           <span>1/02/2024</span>
         </div>
-        <div className="item issue">
+        <div className="f-c-item">
           <span>Issue</span>
           <span>
             Recently, I've encountered an unexpected log-out issue while{" "}
@@ -27,7 +27,7 @@ function Feedback({ filter,sort,setFilter,setSort }) {
           </span>
         </div>
         {filter !== "Open" && (
-          <div className="item last-update">
+          <div className="f-c-item">
             <span> Last Update</span>
             <span>
               This unexpected log-out issue hampers the seamless user{" "}
@@ -37,7 +37,7 @@ function Feedback({ filter,sort,setFilter,setSort }) {
             </span>
           </div>
         )}
-        <div className="item status">
+        <div className="f-c-item">
           <span>Status</span>
           {}
           <span
@@ -54,7 +54,7 @@ function Feedback({ filter,sort,setFilter,setSort }) {
             {filter}
           </span>
         </div>
-        <div className="item">
+        <div className="f-c-item">
         <Link style={{ textDecoration: "none" }} to={"/feedback/issue"}>
               view
             </Link>
