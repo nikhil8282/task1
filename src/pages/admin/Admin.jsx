@@ -5,14 +5,15 @@ import Body from "../../components/body/Body";
 import "./admin.css";
 function Main() {
   const [selected, setSelected] = useState("Project");
-    
-  return (<>
-    <AdminNavbar/>
-    <div className="main">
-      <Header setSelected={setSelected} selected={selected} />
-      <Body selected={selected} />
-    </div>
-  </>
+
+  return (
+    <>
+      <AdminNavbar />
+      <div className="main">
+        <Header setSelected={setSelected} selected={selected} />
+        <Body selected={selected} />
+      </div>
+    </>
   );
 }
 

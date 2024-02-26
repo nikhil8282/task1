@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/header/Header";
 import Admin from "./pages/admin/Admin";
+import JobRequirement from "./pages/jobRequirement/JobRequirement";
+import JobRequirementManage from "./pages/jobRequirementManage/JobRequirementManage";
 import FeedBack from "./pages/feedback/Feedback";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import IssueView from "./components/issueView/IssueView";
@@ -17,6 +17,14 @@ function App() {
     {
       path: "/admin",
       element: <Admin/>,
+    },
+    {
+      path: "/jobRequirement",
+      element: <JobRequirement/>,
+    },
+    {
+      path: "/jobRequirement/manage",
+      element: <JobRequirementManage/>,
     },
 
     {
