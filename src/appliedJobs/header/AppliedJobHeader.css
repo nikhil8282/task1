@@ -1,10 +1,9 @@
-.p-manage-head-container {
+.hire-head-container {
 
     /* width: 100%; */
 
 
-    margin: 20px 40px 0px 40px;
-    padding: 15px 0px;
+    padding: 15px 30px;
 
     background: #ffffff;
     /* background: rebeccapurple; */
@@ -12,10 +11,10 @@
     border-radius: 44px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.p-h-item {
+.h-item {
     /* background: blue; */
     display: flex;
     align-items: center;
@@ -27,20 +26,14 @@
 
 
 
-.p-h-img {
+.h-item>img {
     /* Frame 1527 */
     width: 25px;
-
     object-fit: cover;
 
-    height: 25px;
+    /* height: 20px; */
 
     /* Auto layout */
-}
-
-.p-h-img img {
-    width: 100%;
-    height: 100%;
 }
 
 .select {

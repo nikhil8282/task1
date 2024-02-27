@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./companyRequirement.css";
+import "./JobDescription.css";
 import businessman from "../../images/Businessman.png";
 import { Link } from "react-router-dom";
 function Body({ selected }) {

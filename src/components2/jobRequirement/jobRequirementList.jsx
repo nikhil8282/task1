@@ -3,16 +3,15 @@ import "./jobRequirementList.css";
 import check from "../../images/check.png";
 import search from "../../images/search.png";
 import businessman from "../../images/Businessman.png";
-import View from "../projectDetails/View";
+import JobRequirementView from "../../components2/jobRequirementView/JobRequirementView";
 import Popup from "../popup/Popup";
 import { Link } from "react-router-dom";
 function Body({ selected }) {
   const [openView, setOpenView] = useState(false);
-  const [openPopup, setOpenPopup] = useState(false);
 
   return (
     <div className={`j-${selected}-container`}>
-      {(selected === "Accepted" || selected === "CompletedRequirement" )  && (
+      {(selected === "Accepted" || selected === "CompletedRequirement") && (
         <div className="j-search">
           <div className="j-search-img">
             <img src={search} alt="" />
@@ -42,35 +41,29 @@ function Body({ selected }) {
           <>
             <div className="j-item-buttons">
               <button
-                onClick={() => {
-                  setOpenPopup(true);
-                }}
+                // onClick={() => {
+                //   setOpenPopup(true);
+                // }}
               >
                 Accept
               </button>
               <button
-                onClick={() => {
-                  setOpenPopup(true);
-                }}
+                // onClick={() => {
+                //   setOpenPopup(true);
+                // }}
               >
                 Reject
               </button>
             </div>
-            <div className="j-item-View">
-              <Link style={{ textDecoration: "none" }} to={"/feedback/issue"}>
-                view
-              </Link>
+            <div className="j-r-item-View">
+              <span onClick={() => setOpenView(true)}>view</span>
             </div>
           </>
         )}
         {selected === "Accepted" && (
-          <Link to="/jobRequirement/manage">
-          <button
-            className="accept-btn"
-            >
-            Manage
-          </button>
-            </Link>
+          <Link to="/jobRequirementManage">
+            <button className="accept-btn">Manage</button>
+          </Link>
         )}
 
         {selected === "CompletedRequirement" && (
@@ -104,35 +97,29 @@ function Body({ selected }) {
           <>
             <div className="j-item-buttons">
               <button
-                onClick={() => {
-                  setOpenPopup(true);
-                }}
+                // onClick={() => {
+                //   setOpenPopup(true);
+                // }}
               >
                 Accept
               </button>
               <button
-                onClick={() => {
-                  setOpenPopup(true);
-                }}
+                // onClick={() => {
+                //   setOpenPopup(true);
+                // }}
               >
                 Reject
               </button>
             </div>
-            <div className="j-item-View">
-              <Link style={{ textDecoration: "none" }} to={"/feedback/issue"}>
-                view
-              </Link>
+            <div className="j-r-item-View">
+              <span onClick={() => setOpenView(true)}>view</span>
             </div>
           </>
         )}
         {selected === "Accepted" && (
-          <Link to="/jobRequirement/manage">
-          <button
-            className="accept-btn"
-            >
-            Manage
-          </button>
-            </Link>
+          <Link to="/jobRequirementManage">
+            <button className="accept-btn">Manage</button>
+          </Link>
         )}
 
         {selected === "CompletedRequirement" && (
@@ -166,35 +153,29 @@ function Body({ selected }) {
           <>
             <div className="j-item-buttons">
               <button
-                onClick={() => {
-                  setOpenPopup(true);
-                }}
+                // onClick={() => {
+                //   setOpenPopup(true);
+                // }}
               >
                 Accept
               </button>
               <button
-                onClick={() => {
-                  setOpenPopup(true);
-                }}
+                // onClick={() => {
+                //   setOpenPopup(true);
+                // }}
               >
                 Reject
               </button>
             </div>
-            <div className="j-item-View">
-              <Link style={{ textDecoration: "none" }} to={"/feedback/issue"}>
-                view
-              </Link>
+            <div className="j-r-item-View">
+              <span onClick={() => setOpenView(true)}>view</span>
             </div>
           </>
         )}
         {selected === "Accepted" && (
-          <Link to="/jobRequirement/manage">
-          <button
-            className="accept-btn"
-            >
-            Manage
-          </button>
-            </Link>
+          <Link to="/jobRequirementManage">
+            <button className="accept-btn">Manage</button>
+          </Link>
         )}
 
         {selected === "CompletedRequirement" && (
@@ -228,35 +209,29 @@ function Body({ selected }) {
           <>
             <div className="j-item-buttons">
               <button
-                onClick={() => {
-                  setOpenPopup(true);
-                }}
+                // onClick={() => {
+                //   setOpenPopup(true);
+                // }}
               >
                 Accept
               </button>
               <button
-                onClick={() => {
-                  setOpenPopup(true);
-                }}
+                // onClick={() => {
+                //   setOpenPopup(true);
+                // }}
               >
                 Reject
               </button>
             </div>
-            <div className="j-item-View">
-              <Link style={{ textDecoration: "none" }} to={"/feedback/issue"}>
-                view
-              </Link>
+            <div className="j-r-item-View">
+              <span onClick={() => setOpenView(true)}>view</span>
             </div>
           </>
         )}
         {selected === "Accepted" && (
-          <Link to="/jobRequirement/manage">
-          <button
-            className="accept-btn"
-            >
-            Manage
-          </button>
-            </Link>
+          <Link to="/jobRequirementManage">
+            <button className="accept-btn">Manage</button>
+          </Link>
         )}
 
         {selected === "CompletedRequirement" && (
@@ -268,9 +243,9 @@ function Body({ selected }) {
           </div>
         )}
       </div>
- 
-      <View open={openView} setOpen={setOpenView} />
-      <Popup open={openPopup} setOpen={setOpenPopup} />
+
+      <JobRequirementView open={openView} setOpen={setOpenView} />
+      {/* <Popup open={openPopup} setOpen={setOpenPopup} /> */}
     </div>
   );
 }

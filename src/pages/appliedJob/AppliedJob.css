@@ -1,0 +1,9 @@
+.main {
+    /* background: green; */
+    /* margin: 27px 25px 0px 25px; */
+    /* height: 100vh; */
+    padding: 20px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -2,14 +2,7 @@ import React, { useState } from "react";
 import "./manage.css";
 import check from "../../images/check.png";
 import back from "../../images/back.png";
-import search from "../../images/search.png";
-import businessman from "../../images/Businessman.png";
-import View from "../projectDetails/View";
-import Popup from "../popup/Popup";
-import { Link } from "react-router-dom";
-function Body({ selected }) {
-  const [openView, setOpenView] = useState(false);
-  const [openPopup, setOpenPopup] = useState(false);
+function Body() {
 
   return (
     <div className="j-manage-container">
@@ -32,10 +25,7 @@ function Body({ selected }) {
           </div>
         </div>
       </div>
-
-      <View open={openView} setOpen={setOpenView} />
-      <Popup open={openPopup} setOpen={setOpenPopup} />
-    </div>
+</div>
   );
 }
 

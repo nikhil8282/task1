@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./hireNavbar.css";
 import bell from "../../images/bell.png";
 import back from "../../images/back.png";
 function HireNavbar() {
+  const [openSort, setOpenSort] = useState(false);
+  const [sort, setSort] = useState("Today");
+
+  const handleChangeFilter = (val) => {
+    if (val !== sort) setSort(val);
+    setOpenSort(false);
+  };
   return (
     <div className="hire-nav">
       <div className="hire-left-nav">
@@ -17,11 +24,25 @@ function HireNavbar() {
         <div className="r-nav-items">
           <span>sort</span>
 
-          <div className="dropdown">
-            <button className="dropbtn">
-              <span>Today</span>
+          <div class="dropdown">
+            <button
+              class="dropbtn"
+              onClick={() => {
+                setOpenSort(!openSort);
+              }}
+            >
+              <span className="sb">{sort}</span>
               <img src={back} alt="" />
             </button>
+            <div
+              style={{ display: `${openSort ? "block" : "none"}` }}
+              class="dropdown-content"
+            >
+              <span onClick={() => setSort("Today")}>Today</span>
+              <span onClick={() => setSort("Yesterday")}>Yesterday</span>
+              <span onClick={() => setSort("Last Week")}>Last Week</span>
+              <span onClick={() => setSort("Last Month")}>Last Month</span>
+            </div>
           </div>
         </div>
       </div>

@@ -4,8 +4,7 @@ import AdminNavbar from "../../components/admin_navbar/AdminNavbar";
 import JobRequirementList from "../../components2/jobRequirement/jobRequirementList";
 import "./jobRequirement.css";
 function Main() {
-  // const [selected, setSelected] = useState("JobRequirement");
-  const [selected, setSelected] = useState("Accepted");
+  const [selected, setSelected] = useState("JobRequirement");
     
   return (<>
     <AdminNavbar/>

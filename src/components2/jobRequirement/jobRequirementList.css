@@ -248,3 +248,15 @@ bottom: 65.65%; */
     width: 30px;
     height: 30px;
 }
+
+.j-r-item-View {
+    color: #3583F6;
+    
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}

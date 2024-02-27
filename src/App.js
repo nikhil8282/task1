@@ -1,5 +1,8 @@
 import "./App.css";
 import Admin from "./pages/admin/Admin";
+
+import AppliedJob from "./pages/appliedJob/AppliedJob";
+import AppliedJobView from "./pages/appliedJobView/AppliedJobView";
 import JobRequirement from "./pages/jobRequirement/JobRequirement";
 import JobRequirementManage from "./pages/jobRequirementManage/JobRequirementManage";
 import FeedBack from "./pages/feedback/Feedback";
@@ -19,11 +22,19 @@ function App() {
       element: <Admin/>,
     },
     {
+      path: "/appliedJob",
+      element: <AppliedJob/>,
+    },
+    {
+      path: "/appliedJob/view",
+      element: <AppliedJobView/>,
+    },
+    {
       path: "/jobRequirement",
       element: <JobRequirement/>,
     },
     {
-      path: "/jobRequirement/manage",
+    path: "/jobRequirementManage",
       element: <JobRequirementManage/>,
     },
 
