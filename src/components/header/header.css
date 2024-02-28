@@ -36,6 +36,12 @@
     /* Auto layout */
 }
 
-.select {
-    color: #3583F6;
+.h-item span {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    /* color: #0F0F0F; */
+
 }
+

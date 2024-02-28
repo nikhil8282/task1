@@ -8,7 +8,10 @@ function Header({ selected, setSelected }) {
   return (
     <div className="p-manage-head-container">
       <div
-        className={`p-h-item ${"Manage" === selected ? "select" : ""}`}
+        className="p-h-item"
+        style={{
+          color: `${"Manage" === selected ? "#3583F6" : "#0F0F0F"}`,
+          }}
         onClick={() => {
           handleChange("Manage");
         }}
@@ -20,8 +23,11 @@ function Header({ selected, setSelected }) {
         <span className="sb">Manage</span>
       </div>
       <div
-        className={`p-h-item ${"CompanyRequirement" === selected ? "select" : ""}`}
-        onClick={() => {
+        className="p-h-item"
+        style={{
+          color: `${"CompanyRequirement" === selected ? "#3583F6" : "#0F0F0F"}`,
+          }}
+          onClick={() => {
           handleChange("CompanyRequirement");
         }}
       >

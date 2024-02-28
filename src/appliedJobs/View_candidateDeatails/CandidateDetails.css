@@ -1,5 +1,5 @@
 .a-view-container {
-    height: 73.2vh;
+    /* height: 73.2vh; */
     background: #FFFFFF;
     box-shadow: -3px -5px 53.7px rgba(0, 0, 0, 0.11);
     border-radius: 46px 46px 0px 0px;
@@ -10,9 +10,9 @@
 
 .a-view-headings {
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 36px;
+    /* line-height: 36px; */
     letter-spacing: 0em;
     text-align: left;
     color: #101010;
@@ -25,6 +25,7 @@
     justify-content: space-between;
     padding: 30px 40px 20px 40px;
     /* background: blue; */
+
 }
 
 .a-v-top-first {
@@ -35,9 +36,9 @@
 }
 
 .a-v-top-first-img {
-    width: 45px;
+    width: 40px;
     padding: 10px;
-    height: 45px;
+    height: 40px;
     border-radius: 50%;
     border: 1px solid #101010
 }
@@ -52,6 +53,28 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
+}
+
+.a-v-top-elements span:nth-child(1) {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 47px; */
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6E6E6E;
+
+}
+
+.a-v-top-elements span:nth-child(2) {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    /* line-height: 36px; */
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101010;
+
 }
 
 .a-v-top-last {
@@ -73,6 +96,14 @@
     background: #101010;
     border-radius: 86px;
 
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 41px; */
+    letter-spacing: -0.02em;
+
+
 }
 
 .a-v-top-last button img {
@@ -82,7 +113,171 @@
 }
 
 .a-v-bio {
-    padding: 30px 40px;
+    padding: 20px 40px;
+    font-size: 12px;
     border-top: 1px solid #A6A9ACB2;
-    border-bottom: 1px solid #A6A9ACB2;
+}
+
+.a-v-exp_skill {
+    border-top: 1px solid #A6A9ACB2;
+    display: flex;
+    padding: 0px 40px;
+    font-size: 12px;
+}
+
+.a-v-exp {
+    flex: 4;
+    border-right: 1px solid #A6A9ACB2;
+
+    padding: 25px 0px;
+
+
+}
+
+.a-v-exp-list {
+    padding-left: 30px;
+
+}
+
+.a-v-exp-item {
+    display: flex;
+    padding: 10px 0px;
+}
+
+.circle-counter {
+    padding-right: 20px;
+
+}
+
+.circle-counter span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    font-size: 10px;
+    height: 15px;
+    color: #3583F6;
+    border: 1px solid #3583F6;
+    border-radius: 50%;
+}
+
+.exp-item-content {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.blue-time {
+    font-size: 10px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #3583F6;
+    text-align: left;
+
+}
+
+.bold-sub-head {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    /* line-height: 45px; */
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding-top: 2px;
+}
+
+.exp-des {
+    padding-top: 5px;
+}
+
+.exp-des li {
+    list-style-type: none;
+    font-size: small;
+}
+
+.exp-des li:before {
+    padding-right: 10px;
+    content: '\2022';
+    font-size: 12px;
+
+}
+
+.a-v-skill {
+    padding: 25px 30px 25px 30px;
+
+    flex: 2;
+}
+
+.a-v-skill-container {
+    margin-top: 30px;
+    padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #000000;
+}
+
+.a-v-skill-item {
+    background: #DFEDFF;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    /* line-height: 45px; */
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.a-v-edu {
+    font-size: 12px;
+    padding: 30px 0px 0px 40px;
+
+
+    border-top: 1px solid #A6A9ACB2;
+    position: relative;
+}
+
+.a-view-buttons {
+    display: flex;
+    position: absolute;
+    top: -20px;
+    right: 1em;
+    left: 1em;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.a-view-buttons button {
+    color: white;
+    border: none;
+    border-radius: 45px;
+    background: #3583F6;
+    padding: 5px 14em;
+    z-index: 99;
+
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    /* line-height: 36px; */
+    letter-spacing: 0em;
+    /* text-align: left; */
+
+}
+
+.a-view-buttons button:last-child {
+    background: white;
+    border: 1px solid #3583F6;
+    color: #101010;
+
+
+}
+
+
+.a-v-edu-container {
+    padding-left: 30px;
 }

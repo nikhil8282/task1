@@ -37,7 +37,6 @@ function App() {
     path: "/jobRequirementManage",
       element: <JobRequirementManage/>,
     },
-
     {
       path: "/feedback",
       element: <FeedBack  filter={feedbackFilter} sort={feedbackSort} setFilter={setFeedbackFilter} setSort={setFeedbackSort}/>,

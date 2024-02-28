@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import AppliedJobViewHeader from "../../appliedJobs/View_Header/AppliedJobViewHeader"
-import CandidateDetails from "../../appliedJobs/View_candidateDeatails/CandidateDetails"
-import JobDescription from "../../appliedJobs/View_JobDescription/JobDescription"
+import AppliedJobViewHeader from "../../appliedJobs/View_Header/AppliedJobViewHeader";
+import CandidateDetails from "../../appliedJobs/View_candidateDeatails/CandidateDetails";
+import JobDescription from "../../appliedJobs/View_JobDescription/JobDescription";
 import AdminNavbar from "../../components/admin_navbar/AdminNavbar";
 import "./appliedJobView.css";
 function Main() {
   // const [selected, setSelected] = useState("JobRequirement");
-  const [selected, setSelected] = useState("CandidateDetails");
+  const [selected, setSelected] = useState("CandidateDetail");
 
   return (
     <>
@@ -17,8 +17,8 @@ function Main() {
           <CandidateDetails />
         </div>
       ) : (
-        <div className="j-r-c-main">
-          {/* <JobDescription /> */}
+        <div className="j-r-m-main">
+          <JobDescription />
         </div>
       )}
     </>

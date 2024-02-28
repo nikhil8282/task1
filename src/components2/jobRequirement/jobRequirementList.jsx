@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import "./jobRequirementList.css";
+import "../acceptPopup/acceptPopup.css";
+import "../rejectPopup/rejectPopup.css";
 import check from "../../images/check.png";
 import search from "../../images/search.png";
 import businessman from "../../images/Businessman.png";
 import JobRequirementView from "../../components2/jobRequirementView/JobRequirementView";
-import Popup from "../popup/Popup";
+
+import Dialog from "@mui/material/Dialog";
+
 import { Link } from "react-router-dom";
 function Body({ selected }) {
   const [openView, setOpenView] = useState(false);
+  const [acceptPopup, setAcceptPopup] = useState(false);
+  const [rejectPopup, setRejectPopup] = useState(false);
 
   return (
     <div className={`j-${selected}-container`}>
@@ -41,19 +47,13 @@ function Body({ selected }) {
           <>
             <div className="j-item-buttons">
               <button
-                // onClick={() => {
-                //   setOpenPopup(true);
-                // }}
+                onClick={() => {
+                  setAcceptPopup(true);
+                }}
               >
                 Accept
               </button>
-              <button
-                // onClick={() => {
-                //   setOpenPopup(true);
-                // }}
-              >
-                Reject
-              </button>
+              <button onClick={() => setRejectPopup(true)}>Reject</button>
             </div>
             <div className="j-r-item-View">
               <span onClick={() => setOpenView(true)}>view</span>
@@ -75,6 +75,7 @@ function Body({ selected }) {
           </div>
         )}
       </div>
+
       <div div className="j-items">
         <div className="j-item-first">
           <div className="j-item-first-img">
@@ -97,19 +98,13 @@ function Body({ selected }) {
           <>
             <div className="j-item-buttons">
               <button
-                // onClick={() => {
-                //   setOpenPopup(true);
-                // }}
+                onClick={() => {
+                  setAcceptPopup(true);
+                }}
               >
                 Accept
               </button>
-              <button
-                // onClick={() => {
-                //   setOpenPopup(true);
-                // }}
-              >
-                Reject
-              </button>
+              <button onClick={() => setRejectPopup(true)}>Reject</button>
             </div>
             <div className="j-r-item-View">
               <span onClick={() => setOpenView(true)}>view</span>
@@ -131,6 +126,7 @@ function Body({ selected }) {
           </div>
         )}
       </div>
+
       <div div className="j-items">
         <div className="j-item-first">
           <div className="j-item-first-img">
@@ -153,19 +149,13 @@ function Body({ selected }) {
           <>
             <div className="j-item-buttons">
               <button
-                // onClick={() => {
-                //   setOpenPopup(true);
-                // }}
+                onClick={() => {
+                  setAcceptPopup(true);
+                }}
               >
                 Accept
               </button>
-              <button
-                // onClick={() => {
-                //   setOpenPopup(true);
-                // }}
-              >
-                Reject
-              </button>
+              <button onClick={() => setRejectPopup(true)}>Reject</button>
             </div>
             <div className="j-r-item-View">
               <span onClick={() => setOpenView(true)}>view</span>
@@ -187,6 +177,7 @@ function Body({ selected }) {
           </div>
         )}
       </div>
+
       <div div className="j-items">
         <div className="j-item-first">
           <div className="j-item-first-img">
@@ -209,19 +200,13 @@ function Body({ selected }) {
           <>
             <div className="j-item-buttons">
               <button
-                // onClick={() => {
-                //   setOpenPopup(true);
-                // }}
+                onClick={() => {
+                  setAcceptPopup(true);
+                }}
               >
                 Accept
               </button>
-              <button
-                // onClick={() => {
-                //   setOpenPopup(true);
-                // }}
-              >
-                Reject
-              </button>
+              <button onClick={() => setRejectPopup(true)}>Reject</button>
             </div>
             <div className="j-r-item-View">
               <span onClick={() => setOpenView(true)}>view</span>
@@ -245,6 +230,62 @@ function Body({ selected }) {
       </div>
 
       <JobRequirementView open={openView} setOpen={setOpenView} />
+
+      <Dialog
+        maxWidth="sm"
+        open={acceptPopup}
+        onClose={() => setAcceptPopup(false)}
+      >
+        <div className="popup-container">
+          <div className="popup-container-text">
+            Are you sure you want to consider this company?
+          </div>
+          <div className="popup-container-btn">
+            <button
+              onClick={() => {
+                setAcceptPopup(false);
+              }}
+            >
+              Yes
+            </button>
+            <button
+              onClick={() => {
+                setAcceptPopup(false);
+              }}
+            >
+              No
+            </button>
+          </div>
+        </div>
+      </Dialog>
+
+      <Dialog
+        maxWidth="sm"
+        open={rejectPopup}
+        onClose={() => setRejectPopup(false)}
+      >
+        <div className="popup-container">
+          <div className="popup-container-text">
+            Are you sure you want to reject this company?
+          </div>
+          <div className="popup-container-btn">
+            <button
+              onClick={() => {
+                setRejectPopup(false);
+              }}
+            >
+              Yes
+            </button>
+            <button
+              onClick={() => {
+                setRejectPopup(false);
+              }}
+            >
+              No
+            </button>
+          </div>
+        </div>
+      </Dialog>
       {/* <Popup open={openPopup} setOpen={setOpenPopup} /> */}
     </div>
   );

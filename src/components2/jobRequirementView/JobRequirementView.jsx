@@ -1,8 +1,8 @@
 import "./jobRequirementView.css";
 import {useState} from "react";
 import Dialog from "@mui/material/Dialog";
-import AcceptPopup from "./acceptPopup/AcceptPopup"
-import RejectPopup from "./rejectPopup/RejectPopup"
+import AcceptPopup from "../acceptPopup/AcceptPopup"
+import RejectPopup from "../rejectPopup/RejectPopup"
 import businessman from "../../images/Businessman.png";
 export default function JobRequirementView({ open, setOpen }) {
   const [acceptPopup,setAcceptPopup]=useState(false);

@@ -10,8 +10,11 @@ function Header({ selected, setSelected }) {
   return (
     <div className="hire-head-container">
       <div
-        className={`h-item ${"Project" === selected ? "select" : ""}`}
-        onClick={() => {
+        className="h-item"
+        style={{
+          color: `${"Project" === selected ? "#3583F6" : "#0F0F0F"}`,
+        }}
+         onClick={() => {
           handleChange("Project");
         }}
       >
@@ -19,7 +22,10 @@ function Header({ selected, setSelected }) {
         <span className="sb">Project Requirements</span>
       </div>
       <div
-        className={`h-item ${"Accepted" === selected ? "select" : ""}`}
+        className="h-item"
+        style={{
+          color: `${"Accepted" === selected ? "#3583F6" : "#0F0F0F"}`,
+        }}
         onClick={() => {
           handleChange("Accepted");
         }}
@@ -28,7 +34,10 @@ function Header({ selected, setSelected }) {
         <span className="sb">Accepted</span>
       </div>
       <div
-        className={`h-item ${"Completed" === selected ? "select" : ""}`}
+        className="h-item"
+        style={{
+          color: `${"Completed" === selected ? "#3583F6" : "#0F0F0F"}`,
+        }}
         onClick={() => {
           handleChange("Completed");
         }}
