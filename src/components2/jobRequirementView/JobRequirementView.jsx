@@ -113,8 +113,8 @@ export default function JobRequirementView({ open, setOpen }) {
         </div>
       </div>
     </Dialog>
-          <AcceptPopup open={acceptPopup} setOpen={setAcceptPopup} setViewOpen={setOpen}/>
-          <RejectPopup open={rejectPopup} setOpen={setRejectPopup} setViewOpen={setOpen}/>
+    <AcceptPopup open={acceptPopup} setOpen={setAcceptPopup} setViewOpen={setOpen}/>
+    <RejectPopup open={rejectPopup} setOpen={setRejectPopup} setViewOpen={setOpen}/>
     </>
   );
 }

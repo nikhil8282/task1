@@ -41,17 +41,108 @@
 
 }
 
-.blue-text {
-    color: #3583F6;
+/*--------------------- comon header css-------------------*/
+.comon-header {
+
+    padding: 15px 30px;
+
+
+
+
+    background: #ffffff;
+    /* background: rebeccapurple; */
+    box-shadow: 0px 4px 12.5px rgba(0, 0, 0, 0.14);
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.c-h-item {
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
 
 }
 
-.green-text {
-    color: #27B357;
+
+
+.c-h-item>img {
+    /* Frame 1527 */
+    width: 25px;
+    object-fit: cover;
+
+    /* height: 20px; */
+
+    /* Auto layout */
+}
+
+.c-h-item span {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
 
 }
 
-.red-text {
-    color: #FF4949;
 
+/* -----------------popupcss----------------------------------*/
+.popup-container {
+    /* hire */
+
+
+    /* height: 251px; */
+    /* Rectangle 368 */
+
+    background: #FFFFFF;
+    border-radius: 26px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.popup-container-text {
+    text-align: center;
+}
+
+.popup-container-btn {
+    /* margin-top: 37px; */
+    display: flex;
+    gap: 25px;
+
+}
+
+.popup-container-btn button {
+    /* Rectangle 366 */
+
+    width: 150px;
+    height: 44px;
+
+
+    /* #3583F6 */
+    background: #3583F6;
+    border-radius: 39px;
+    border: none;
+
+    font-size: 20px;
+    font-weight: 400;
+    /* line-height: 27px; */
+    letter-spacing: 0em;
+    color: #FFFFFF;
+
+
+
+}
+
+.popup-container-btn button:nth-child(2) {
+    background: #FFFFFF;
+    border: 1px solid #3583F6;
+    color: black;
 }
