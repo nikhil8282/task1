@@ -1,0 +1,60 @@
+.admin-login-container {
+    height: 100%;
+    border-radius: 55px 55px 0px 0px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.ad-l-box {
+    width: 30%;
+}
+
+.ad-l-item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+
+}
+
+.ad-l-item span {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212429;
+
+}
+
+.ad-l-item input {
+    border-radius: 10px;
+    border: 1px solid #ACB5BD;
+    height: 45px;
+    font-size: 18px;
+    padding: 5px 5px 5px 10px;
+}
+
+.ad-l-item button {
+
+    /* Blue */
+    background: #011135;
+    border-radius: 10px;
+
+
+    /* Text */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+
+    /* Highlight */
+    color: #FFFFFF;
+
+
+}

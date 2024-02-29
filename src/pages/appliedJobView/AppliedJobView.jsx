@@ -17,7 +17,7 @@ function Main() {
     <>
       <AdminNavbar />
       {/* <AppliedJobViewHeader setSelected={setSelected} selected={selected} /> */}
-      <div className="comon-header">
+      <div className="comon-header" style={{ margin: "20px 40px 0px 40px" }}>
         <div
           className="c-h-item"
           style={{

@@ -9,6 +9,7 @@ import FeedBack from "./pages/feedback/Feedback";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import IssueView from "./components/issueView/IssueView";
 import { useState } from "react";
+import AdminLogin from "./pages/login/AdminLogin";
 
 function App() {
     
@@ -16,6 +17,10 @@ function App() {
   const [feedbackSort, setFeedbackSort] = useState("Creataion Date");
   
   const router = createBrowserRouter([
+    {
+      path:"/admin/login",
+      element:<AdminLogin/>
+    },
     
     {
       path: "/admin",
